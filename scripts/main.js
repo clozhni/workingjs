@@ -17,7 +17,7 @@ var myButton  = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 
 function setUserName() {
-  var myName = promp('Please enter your name');
+  var myName = prompt('Please enter your name.');
   localStorage.setItem('name' , myName);
   myHeading.textContent = 'Baltimore is cool,  ' + myName;
 }
@@ -28,7 +28,6 @@ if(!localStorage.getItem('name' )) {
     var storedName = localStorage.getItem('name');
     myHeading.textContent = 'Baltimore is cool, ' + storedName;
   }
-}
 
 myButton.onclick = function() {
   setUserName();
