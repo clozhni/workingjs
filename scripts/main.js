@@ -24,7 +24,7 @@ function setUserName() {
 
 if(!localStorage.getItem('name' )) {
   setUserName();
-  else {
+}  else {
     var storedName = localStorage.getItem('name');
     myHeading.textContent = 'Baltimore is cool, ' + storedName;
   }
