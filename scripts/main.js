@@ -29,3 +29,7 @@ if(!localStorage.getItem('name' )) {
     myHeading.textContent = 'Baltimore is cool, ' + storedName;
   }
 }
+
+myButton.onclick = function() {
+  setUserName();
+}
